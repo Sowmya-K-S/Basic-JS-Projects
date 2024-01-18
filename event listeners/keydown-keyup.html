@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body
+       {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #card
+        {
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="card"><h1 id="some">Press any key</h1></div>
+
+    <script>
+        let elem = document.getElementById("some");
+
+        function display() {
+            elem.innerText = "Key down";
+        }
+
+        document.addEventListener("keydown", display);
+
+        function dis() {
+            elem.innerText = "Key up";
+        }
+
+        document.addEventListener("keyup", dis);
+    </script>
+</body>
+</html>

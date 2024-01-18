@@ -1,0 +1,45 @@
+
+<!-- double click -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clicktwice</title>
+    <style>
+        body
+        {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height:100vh;
+        }
+        #click2
+        {
+            height:45px;
+            width:200px;
+            background-color: green;
+            color:white;
+            font-weight:600px ;
+            font-size: 20px;
+            border:none;
+            border-radius:5px;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <button id="click2">click twice</button>
+
+    <script>
+        let ele=document.getElementById("click2")
+        ele.addEventListener("dblclick",textChange)
+
+        function textChange()
+        {
+            ele.innerText="Hey you clicked me"
+        }
+    </script>
+</body>
+</html>

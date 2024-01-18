@@ -1,0 +1,45 @@
+
+<!-- onclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+    <style>
+        body
+        {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height:100vh;
+        }
+        #click1
+        {
+            height:45px;
+            width:200px;
+            background-color: green;
+            color:white;
+            font-weight:600px ;
+            font-size: 20px;
+            border:none;
+            border-radius:5px;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <button id="click1">click once</button>
+
+    <script>
+        let ele=document.getElementById("click1")
+        ele.addEventListener("click",textChange)
+
+        function textChange()
+        {
+            ele.innerText="Hey you clicked me"
+        }
+    </script>
+</body>
+</html>

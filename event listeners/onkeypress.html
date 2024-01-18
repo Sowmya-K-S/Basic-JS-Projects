@@ -1,0 +1,58 @@
+
+<!-- on keypress -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+    <style>
+        body
+        {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap:40px;
+            height:100vh;
+            flex-direction: column;
+        }
+        #key
+        {
+            height:45px;
+            width:150px;
+            background-color: green;
+            color:white;
+            font-weight:600px ;
+            font-size: 20px;
+            border:none;
+            border-radius:5px;
+            padding:2px;
+        }
+        #t
+        {
+            height:40px;
+            width:200px;
+           font-weight: 500;
+           font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>Type Something</p>
+   
+    <input type="text" id="t">
+    <button id="key">press a key</button>
+
+    <script>
+        let ele=document.getElementById("key")
+        let elem=document.getElementById("t")
+        elem.addEventListener("keypress",textChange)
+
+        function textChange()
+        {
+            ele.innerText="key pressed"
+        }
+    </script>
+</body>
+</html>
