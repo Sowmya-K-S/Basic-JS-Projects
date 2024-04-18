@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- linking style sheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Poppins font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div class="main-div">
+
+        <div class="heading">
+            <h1>BMI Calculator</h1>
+        </div>
     
+        <div class="body">
+
+            <h2>Enter your height and weight to know your BMI</h2>
+
+            <form action="">
+            <input type="text" placeholder="Enter your weight in Kg" id="weight" step="0.01">
+            <br> <br>
+            <input type="text" placeholder="Enter you height in m" id="height" step="0.01">
+            </form>
+            
+            <button id="calc">Calculate</button> 
+       
+            <span class="bmi-value"></span>
+            <span class="output-Sen"></span>
+        </div>
+      
+    
+       
+
+    </div>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
