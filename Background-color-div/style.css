@@ -1,0 +1,45 @@
+.main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+}
+
+.top,.bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+
+}
+
+.block1, .block2, .block3, .block4
+{
+    width:150px;
+    height:150px;
+} 
+
+.block1
+{
+    background-color: yellow;
+}
+
+.block2
+{
+    background-color: red;
+}
+
+.block3
+{
+    background-color: blue;
+}
+
+.block4
+{
+    background-color: green;
+}
