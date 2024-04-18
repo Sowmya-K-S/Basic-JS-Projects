@@ -1,0 +1,48 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: poppins;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin-top: 300px;
+}
+
+.buttonsdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttonsdiv button
+{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: green;
+    color:white;
+    transition: transform ease 0.1s;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.buttonsdiv button:hover
+{
+    transform: scale(1.1) ;
+}
